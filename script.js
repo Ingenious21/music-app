@@ -13,47 +13,47 @@ const playlist = document.getElementById('playlist');
 const songs = [
     {
         name: 'Chris Brown - Bruce Lee',
-        url: '/music/y2mate.com - Chris Brown Bruce Lee Lyric Video.mp3'
+        url: '/y2mate.com - Chris Brown Bruce Lee Lyric Video.mp3'
     },
     {
         name: 'Chris Brown - Delusional',
-        url: '/music/y2mate.com - Chris Brown Delusional Visualizer.mp3'
+        url: 'y2mate.com - Chris Brown Delusional Visualizer.mp3'
     },
     {
         name: 'Chris Brown - Feelings Don\'t lie',
-        url: '/music/y2mate.com - Chris Brown Feelings Dont Lie Visualizer.mp3'
+        url: 'y2mate.com - Chris Brown Feelings Dont Lie Visualizer.mp3'
     },
     {
         name: 'Chris Brown - Freak - ft Lil Wayne, Joyner Lucas & Tee Grizzley',
-        url: '/music/y2mate.com - Chris Brown Freak Visualizer ft Lil Wayne Joyner Lucas Tee Grizzley.mp3'
+        url: 'y2mate.com - Chris Brown Freak Visualizer ft Lil Wayne Joyner Lucas Tee Grizzley.mp3'
     },
     {
         name: 'Chris Brown - Hmm - ft Davido',
-        url: '/music/y2mate.com - Chris Brown Hmmm Visualizer ft Davido.mp3'
+        url: 'y2mate.com - Chris Brown Hmmm Visualizer ft Davido.mp3'
     },
     {
         name: 'Chris Brown - No One Else',
-        url: '/music/y2mate.com - Chris Brown No One Else Visualizer ft Fridayy.mp3'
+        url: 'y2mate.com - Chris Brown No One Else Visualizer ft Fridayy.mp3'
     },
     {
         name: 'Chris Brown - Press Me',
-        url: '/music/y2mate.com - Chris Brown Press Me Visualizer.mp3'
+        url: 'y2mate.com - Chris Brown Press Me Visualizer.mp3'
     },
     {
         name: 'Chris Brown - Stutter',
-        url: '/music/y2mate.com - Chris Brown Stutter Visualizer.mp3'
+        url: 'y2mate.com - Chris Brown Stutter Visualizer.mp3'
     },
     {
         name: 'Chris Brown - Angel Numbers/Ten Toes',
-        url: '/music/y2mate.com - Chris Brown Angel Numbers Ten Toes Visualizer.mp3'
+        url: 'y2mate.com - Chris Brown Angel Numbers Ten Toes Visualizer.mp3'
     },
     {
         name: 'Chris Brown - Weakest Link',
-        url: '/music/y2mate.com - Weakest Link.mp3'
+        url: 'y2mate.com - Weakest Link.mp3'
     },
     {
         name: 'Chris Brown - Closer',
-        url: '/music/y2mate.com - Chris Brown Closer Visualizer_720pFH.mp4'
+        url: '/workspaces/music-app/y2mate.com - Chris Brown Closer Visualizer_720pFH.mp4'
     }
 ];
 
