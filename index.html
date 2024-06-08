@@ -15,28 +15,30 @@
             <audio id="audio" src=""></audio>
             <div class="current-song">
                 <h4 id="currentSongName">No song playing</h4>
+
                 <div class="time-controls">
                     <span id="currentTime">00:00</span> / <span id="totalDuration">00:00</span>
-                
-                    <div class="playback-speed mb-3">
-                        <label for="speed">Speed:</label>
-                        <select id="speed" class="custom-select w-auto">
-                            <option value="0.5">0.5x</option>
-                            <option value="1" selected>1x</option>
-                            <option value="1.25">1.25x</option>
-                            <option value="1.5">1.5x</option>
-                            <option value="2">2x</option>
-                        </select>
-                    </div>
                 </div>
+
+                <div class="playback-speed">
+                    <label for="speed">Speed:</label>
+                    <select id="speed" class="custom-select w-auto">
+                        <option value="0.5">0.5x</option>
+                        <option value="1" selected>1x</option>
+                        <option value="1.25">1.25x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2">2x</option>
+                    </select>
+                </div>       
+
             </div>
             <div class="controls">
                 <button id="prev" class="btn btn-primary"><i class="fas fa-backward"></i></button>
                 <button id="play" class="btn btn-primary"><i id="playIcon" class="fas fa-play"></i></button>
                 <button id="next" class="btn btn-primary"><i class="fas fa-forward"></i></button>
                 <button id="playlistBtn" class="btn btn-primary" data-toggle="modal" data-target="#playlistModal">Playlist</button>
-                <button id="vol-down" class="btn btn-secondary">-</button>
-                <button id="vol-up" class="btn btn-secondary">+</button>
+                <button id="repeat" class="btn btn-primary"><i class="fas fa-redo"></i></button>
+                <button id="shuffle" class="btn btn-primary"><i class="fas fa-random"></i></button>
             </div>
         </div>
     </div>
@@ -64,7 +66,7 @@
     </div>
 
     
-    <footer class="footer mt-6">
+    <footer class="footer">
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-6 text-center">
@@ -73,16 +75,16 @@
             </div>
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-6 text-center">
-                    <a href="https://github.com/nehemiah-ng/music-app" target="_blank" class="social-icon">
+                    <a href="https://github.com/Ingenious21 target="_blank" class="social-icon">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/nehemiah-ng/" target="_blank" class="social-icon">
+                    <a href="https://www.linkedin.com/in/nehemiah-kemayah-44164921a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="social-icon">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://twitter.com/nehemiah_ng" target="_blank" class="social-icon">
-                        <i class="fab fa-twitter"></i>
+                    <a href="https://www.facebook.com/nehemiahkemayah?mibextid=LQQJ4d" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com/nehemiah_ng/" target="_blank" class="social-icon">
+                    <a href="https://www.instagram.com/handsome_breezy_bac?igsh=cTZ3ZjZ4cnMzMWZ5&utm_source=qr" target="_blank" class="social-icon">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>

@@ -19,20 +19,28 @@ body {
     margin-bottom: 20px;
 }
 
-.time-controls {
-    margin: 10px 0;
-    font-size: 1.2em;
+.time-controls,
+.playback-speed {
+    display: inline-block;
+    margin-right: 20px; 
+    margin-bottom: 20px;
 }
+
+.time-controls span {
+    margin-right: 5px; /* Adjust margin as needed */
+}
+
 
 .footer {
     background-color: #f8f9fa;
-    padding: 20px 0;
+    padding-top: 20px;
 }
 
 .social-icon {
     color: #212529;
     font-size: 24px;
     margin-right: 10px;
+    padding-top: -15px;
 }
 
 .social-icon:hover {

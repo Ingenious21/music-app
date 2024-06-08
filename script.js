@@ -2,8 +2,6 @@ const audio = document.getElementById('audio');
 const playBtn = document.getElementById('play');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
-const volUpBtn = document.getElementById('vol-up');
-const volDownBtn = document.getElementById('vol-down');
 const speedSelect = document.getElementById('speed');
 const currentSongName = document.getElementById('currentSongName');
 const currentTimeElem = document.getElementById('currentTime');
@@ -104,18 +102,6 @@ nextBtn.addEventListener('click', () => {
     currentSongIndex = (currentSongIndex + 1) % songs.length;
     loadSong(currentSongIndex);
     playSong();
-});
-
-volUpBtn.addEventListener('click', () => {
-    if (audio.volume < 1) {
-        audio.volume = Math.min(1, audio.volume + 0.1);
-    }
-});
-
-volDownBtn.addEventListener('click', () => {
-    if (audio.volume > 0) {
-        audio.volume = Math.max(0, audio.volume - 0.1);
-    }
 });
 
 speedSelect.addEventListener('change', () => {
