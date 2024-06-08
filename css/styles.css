@@ -25,3 +25,8 @@ body {
 .current-song h4 {
     margin-bottom: 20px;
 }
+
+.time-controls {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
