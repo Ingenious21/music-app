@@ -9,6 +9,11 @@ body {
     padding: 20px;
 }
 
+.window {
+    width: 200px;
+    height: 150px;
+    overflow-y: scroll;
+}
 
 .modal-body {
     max-height: 400px;

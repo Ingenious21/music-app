@@ -50,8 +50,8 @@ const songs = [
         url: 'y2mate.com%20-%20Weakest%20Link.mp3'
     },
     {
-        name: 'Chris Brown - Closer',
-        url: 'y2mate.com%20-%20Chris%20Brown%20Closer%20Visualizer_720pFH.mp4'
+        name: 'Chris Brown - Shooter',
+        url: 'y2mate.com%20-%20Chris%20Brown%20Shooter%20Visualizer.mp3'
     }
 ];
 
