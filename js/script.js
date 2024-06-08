@@ -6,6 +6,8 @@ const volUpBtn = document.getElementById('vol-up');
 const volDownBtn = document.getElementById('vol-down');
 const speedSelect = document.getElementById('speed');
 const currentSongName = document.getElementById('currentSongName');
+const currentTimeElem = document.getElementById('currentTime');
+const totalDurationElem = document.getElementById('totalDuration');
 const playlist = document.getElementById('playlist');
 
 const songs = [
@@ -32,6 +34,26 @@ const songs = [
     {
         name: 'Chris Brown - No One Else',
         url: '/music/y2mate.com - Chris Brown No One Else Visualizer ft Fridayy.mp3'
+    },
+    {
+        name: 'Chris Brown - Press Me',
+        url: '/music/y2mate.com - Chris Brown Press Me Visualizer.mp3'
+    },
+    {
+        name: 'Chris Brown - Stutter',
+        url: '/music/y2mate.com - Chris Brown Stutter Visualizer.mp3'
+    },
+    {
+        name: 'Chris Brown - Angel Numbers/Ten Toes',
+        url: '/music/y2mate.com - Chris Brown Angel Numbers Ten Toes Visualizer.mp3'
+    },
+    {
+        name: 'Chris Brown - Weakest Link',
+        url: '/music/y2mate.com - Weakest Link.mp3'
+    },
+    {
+        name: 'Chris Brown - Closer',
+        url: '/music/y2mate.com - Chris Brown Closer Visualizer_720pFH.mp4'
     }
 ];
 
@@ -96,6 +118,20 @@ volDownBtn.addEventListener('click', () => {
 speedSelect.addEventListener('change', () => {
     audio.playbackRate = speedSelect.value;
 });
+
+audio.addEventListener('loadedmetadata', () => {
+    totalDurationElem.textContent = formatTime(audio.duration);
+});
+
+audio.addEventListener('timeupdate', () => {
+    currentTimeElem.textContent = formatTime(audio.currentTime);
+});
+
+function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+}
 
 // Load the first song
 loadSong(currentSongIndex);
