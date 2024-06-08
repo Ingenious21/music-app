@@ -13,47 +13,47 @@ const playlist = document.getElementById('playlist');
 const songs = [
     {
         name: 'Chris Brown - Bruce Lee',
-        url: '/y2mate.com - Chris Brown Bruce Lee Lyric Video.mp3'
+        url: 'y2mate.com%20-%20Chris%20Brown%20Bruce%20Lee%20Lyric%20Video.mp3'
     },
     {
         name: 'Chris Brown - Delusional',
-        url: 'y2mate.com - Chris Brown Delusional Visualizer.mp3'
+        url: 'y2mate.com%20-%20Chris%20Brown%20Delusional%20Visualizer.mp3'
     },
     {
         name: 'Chris Brown - Feelings Don\'t lie',
-        url: 'y2mate.com - Chris Brown Feelings Dont Lie Visualizer.mp3'
+        url: 'y2mate.com%20-%20Chris%20Brown%20Feelings%20Dont%20Lie%20Visualizer.mp3'
     },
     {
         name: 'Chris Brown - Freak - ft Lil Wayne, Joyner Lucas & Tee Grizzley',
-        url: 'y2mate.com - Chris Brown Freak Visualizer ft Lil Wayne Joyner Lucas Tee Grizzley.mp3'
+        url: 'y2mate.com%20-%20Chris%20Brown%20Freak%20Visualizer%20ft%20Lil%20Wayne%20Joyner%20Lucas%20Tee%20Grizzley.mp3'
     },
     {
         name: 'Chris Brown - Hmm - ft Davido',
-        url: 'y2mate.com - Chris Brown Hmmm Visualizer ft Davido.mp3'
+        url: 'y2mate.com%20-%20Chris%20Brown%20Hmmm%20Visualizer%20ft%20Davido.mp3'
     },
     {
         name: 'Chris Brown - No One Else',
-        url: 'y2mate.com - Chris Brown No One Else Visualizer ft Fridayy.mp3'
+        url: 'y2mate.com%20-%20Chris%20Brown%20No%20One%20Else%20Visualizer%20ft%20Fridayy.mp3'
     },
     {
         name: 'Chris Brown - Press Me',
-        url: 'y2mate.com - Chris Brown Press Me Visualizer.mp3'
+        url: 'y2mate.com%20-%20Chris%20Brown%20Press%20Me%20Visualizer.mp3'
     },
     {
         name: 'Chris Brown - Stutter',
-        url: 'y2mate.com - Chris Brown Stutter Visualizer.mp3'
+        url: 'y2mate.com%20-%20Chris%20Brown%20Stutter%20Visualizer.mp3'
     },
     {
         name: 'Chris Brown - Angel Numbers/Ten Toes',
-        url: 'y2mate.com - Chris Brown Angel Numbers Ten Toes Visualizer.mp3'
+        url: 'y2mate.com%20-%20Chris%20Brown%20Angel%20Numbers%20Ten%20Toes%20Visualizer.mp3'
     },
     {
         name: 'Chris Brown - Weakest Link',
-        url: 'y2mate.com - Weakest Link.mp3'
+        url: 'y2mate.com%20-%20Weakest%20Link.mp3'
     },
     {
         name: 'Chris Brown - Closer',
-        url: '/workspaces/music-app/y2mate.com - Chris Brown Closer Visualizer_720pFH.mp4'
+        url: 'y2mate.com%20-%20Chris%20Brown%20Closer%20Visualizer_720pFH.mp4'
     }
 ];
 
@@ -77,12 +77,14 @@ function loadSong(index) {
 
 function playSong() {
     audio.play();
-    playBtn.textContent = 'Pause';
+    playIcon.classList.remove('fa-play');
+    playIcon.classList.add('fa-pause');
 }
 
 function pauseSong() {
     audio.pause();
-    playBtn.textContent = 'Play';
+    playIcon.classList.remove('fa-pause');
+    playIcon.classList.add('fa-play');
 }
 
 playBtn.addEventListener('click', () => {
@@ -92,7 +94,6 @@ playBtn.addEventListener('click', () => {
         pauseSong();
     }
 });
-
 prevBtn.addEventListener('click', () => {
     currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
     loadSong(currentSongIndex);
@@ -135,3 +136,5 @@ function formatTime(seconds) {
 
 // Load the first song
 loadSong(currentSongIndex);
+
+document.getElementById('currentYear').textContent = new Date().getFullYear();

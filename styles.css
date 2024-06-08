@@ -31,6 +31,17 @@ body {
     font-size: 1.2em;
 }
 
-.list-group li {
-    cursor: pointer;
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.social-icon {
+    color: #212529;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.social-icon:hover {
+    color: #007bff;
 }

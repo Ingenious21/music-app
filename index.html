@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container mt-5">
@@ -30,14 +31,12 @@
                 </div>
             </div>
             <div class="controls">
-                <button id="prev" class="btn btn-primary">Previous</button>
-                <button id="play" class="btn btn-primary">Play</button>
-                <button id="next" class="btn btn-primary">Next</button>
+                <button id="prev" class="btn btn-primary"><i class="fas fa-backward"></i></button>
+                <button id="play" class="btn btn-primary"><i id="playIcon" class="fas fa-pause"></i></button>
+                <button id="next" class="btn btn-primary"><i class="fas fa-forward"></i></button>
                 <button id="playlistBtn" class="btn btn-primary" data-toggle="modal" data-target="#playlistModal">Playlist</button>
-                <div class="volume-controls mt-3">
-                    <button id="vol-down" class="btn btn-secondary">-</button>
-                    <button id="vol-up" class="btn btn-secondary">+</button>
-                </div>
+                <button id="vol-down" class="btn btn-secondary">-</button>
+                <button id="vol-up" class="btn btn-secondary">+</button>
             </div>
         </div>
     </div>
@@ -64,6 +63,33 @@
         </div>
     </div>
 
+    
+    <footer class="footer mt-6">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 text-center">
+                    <p>Created by Nehemiah &copy; <span id="currentYear"></span></p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 text-center">
+                    <a href="https://github.com/nehemiah-ng/music-app" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nehemiah-ng/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/nehemiah_ng" target="_blank" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/nehemiah_ng/" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
