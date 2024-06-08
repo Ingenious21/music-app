@@ -72,7 +72,7 @@ function loadSong(index) {
     currentSongIndex = index;
     audio.src = songs[index].url;
     currentSongName.textContent = songs[index].name;
-    playSong();
+    pauseSong();
 }
 
 function playSong() {
@@ -97,11 +97,13 @@ playBtn.addEventListener('click', () => {
 prevBtn.addEventListener('click', () => {
     currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
     loadSong(currentSongIndex);
+    playSong();
 });
 
 nextBtn.addEventListener('click', () => {
     currentSongIndex = (currentSongIndex + 1) % songs.length;
     loadSong(currentSongIndex);
+    playSong();
 });
 
 volUpBtn.addEventListener('click', () => {
@@ -134,7 +136,7 @@ function formatTime(seconds) {
     return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
 }
 
-// Load the first song
+
 loadSong(currentSongIndex);
 
 document.getElementById('currentYear').textContent = new Date().getFullYear();

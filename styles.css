@@ -9,13 +9,6 @@ body {
     padding: 20px;
 }
 
-.controls .btn {
-    margin: 10px 5px;
-}
-
-.volume-controls .btn, .playback-speed .custom-select {
-    margin: 5px;
-}
 
 .modal-body {
     max-height: 400px;
