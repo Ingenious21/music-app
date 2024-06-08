@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="music-player text-center">
+            <audio id="audio" src=""></audio>
+            <div class="current-song">
+                <h4 id="currentSongName">No song playing</h4>
+                <div class="time-controls">
+                    <span id="currentTime">00:00</span> / <span id="totalDuration">00:00</span>
+                
+                    <div class="playback-speed mb-3">
+                        <label for="speed">Speed:</label>
+                        <select id="speed" class="custom-select w-auto">
+                            <option value="0.5">0.5x</option>
+                            <option value="1" selected>1x</option>
+                            <option value="1.25">1.25x</option>
+                            <option value="1.5">1.5x</option>
+                            <option value="2">2x</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="prev" class="btn btn-primary">Previous</button>
+                <button id="play" class="btn btn-primary">Play</button>
+                <button id="next" class="btn btn-primary">Next</button>
+                <button id="playlistBtn" class="btn btn-primary" data-toggle="modal" data-target="#playlistModal">Playlist</button>
+                <div class="volume-controls mt-3">
+                    <button id="vol-down" class="btn btn-secondary">-</button>
+                    <button id="vol-up" class="btn btn-secondary">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Playlist Modal -->
+    <div class="modal fade" id="playlistModal" tabindex="-1" role="dialog" aria-labelledby="playlistModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="playlistModalLabel">Playlist</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="playlist" class="list-group">
+                        <!-- Songs will be dynamically added here -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.music-player {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.controls .btn {
+    margin: 10px 5px;
+}
+
+.volume-controls .btn, .playback-speed .custom-select {
+    margin: 5px;
+}
+
+.modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.current-song h4 {
+    margin-bottom: 20px;
+}
